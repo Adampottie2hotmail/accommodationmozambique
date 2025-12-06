@@ -4,10 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dongane Eco Resort • Private Resort in Mozambique</title>
-  <meta name="description" content="Whalehaven is a ground-floor private double room with ensuite, coffee facilities, and full access to pool, deck with sea views, thatched lapa and braai. Quiet cul‑de‑sac in Southbroom, 5 minutes to golf and beaches." />
+  <meta name="description" content="Just a short walk from a shimmering lake, Dongane Eco Resort invites you to relax, reconnect with nature, and experience the calm rhythm of Mozambique’s great outdoors. Whether you’re lounging by your pool, exploring the lakeside, or simply enjoying the quiet, this resort offers an unforgettable eco-escape." />
   <meta property="og:title" content="Dongane Eco Resort • Private Resort in Mozambique" />
-  <meta property="og:description" content="Private ensuite double room with pool, sea‑view deck, thatched lapa & braai. Quiet cul‑de‑sac. 5 mins to golf & beaches." />
+  <meta property="og:description" content="Just a short walk from a shimmering lake, Dongane Eco Resort invites you to relax, reconnect with nature, and experience the calm rhythm of Mozambique’s great outdoors. Whether you’re lounging by your pool, exploring the lakeside, or simply enjoying the quiet, this resort offers an unforgettable eco-escape." />
   <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="favicon.png">
   <meta property="og:image" content="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1200&auto=format&fit=crop" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,9 +30,14 @@
       darkMode: 'class'
     }
   </script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🐋</text></svg>">
+
   <style>
-    .backdrop-blur-2xs { backdrop-filter: blur(2px); }
+    .backdrop-blur-2xs { backdrop-filter: blur(5px); }
+    
+    .max-w-2xl text-lg text-whit/90 {
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
   </style>
 </head>
 <body class="bg-white text-slate-800 antialiased">
@@ -40,8 +46,8 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mt-4 flex items-center justify-between rounded-2xl bg-white/70 p-3 shadow-lg ring-1 ring-black/5 backdrop-blur">
         <a href="#home" class="flex items-center gap-2 font-semibold tracking-tight">
-          <span class="text-2xl">🐋</span>
-          <span>Dongane Eco Resort</span>
+          <span class="text-2xl"><img src="favicon.png" width="15%"></span>
+          <!--<span>Dongane Eco Resort</span>-->
         </a>
         <nav class="hidden gap-8 text-sm font-medium md:flex">
           <a href="#room" class="hover:text-brand-700">Room</a>
@@ -51,10 +57,6 @@
           <a href="#faq" class="hover:text-brand-700">FAQ</a>
           <a href="#contact" class="hover:text-brand-700">Contact</a>
         </nav>
-        <div class="flex items-center gap-3">
-          <button id="themeToggle" class="hidden rounded-xl p-2 ring-1 ring-slate-200 hover:bg-slate-50 md:inline-flex" aria-label="Toggle theme">
-            <svg id="themeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5 fill-current"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0 4a1 1 0 0 1-1-1v-1.1a1 1 0 1 1 2 0V21a1 1 0 0 1-1 1Zm0-19a1 1 0 0 1-1-1V1a1 1 0 1 1 2 0v1a1 1 0 0 1-1 1Zm11 7h-1.1a1 1 0 1 1 0-2H23a1 1 0 1 1 0 2ZM2.1 10H1a1 1 0 1 1 0-2h1.1a1 1 0 0 1 0 2ZM18.36 6.34a1 1 0 0 1 0-1.42l.78-.78a1 1 0 1 1 1.42 1.42l-.78.78a1 1 0 0 1-1.42 0ZM3.44 21.25a1 1 0 0 1 0-1.41l.78-.78a1 1 0 0 1 1.41 1.41l-.78.78a1 1 0 0 1-1.41 0ZM20.56 21.25l-.78-.78a1 1 0 1 1 1.41-1.41l.78.78a1 1 0 0 1-1.41 1.41ZM3.44 3.34A1 1 0 0 1 4.85 1.93l.78.78a1 1 0 1 1-1.41 1.42l-.78-.78Z"/></svg>
-          </button>
           <a href="#book" class="rounded-xl bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-700">Book Now</a>
           <button class="md:hidden" id="menuBtn" aria-label="Open menu">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -77,7 +79,7 @@
 
   <!-- Hero -->
   <section id="home" class="relative isolate min-h-[85vh] overflow-hidden pt-28">
-    <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=2400&auto=format&fit=crop" alt="Sea view deck with pool" class="absolute inset-0 -z-10 h-full w-full object-cover"/>
+    <img src="src/deck-view.jpeg" alt="Sea view deck with pool" class="absolute inset-0 -z-10 h-full w-full object-cover"/>
     <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 
     <div class="mx-auto flex max-w-7xl flex-col items-start gap-6 px-4 py-24 sm:px-6 lg:px-8">
@@ -86,7 +88,7 @@
         Inhambane • Mozambique
       </span>
       <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-6xl">Dongane Eco Resort</h1>
-      <p class="max-w-2xl text-lg text-white/90">Private double room on the ground floor with a <strong class="font-semibold">private ensuite</strong> and in‑room coffee facilities. Enjoy full access to the pool, sea‑view deck, thatched lapa and braai (barbecue). Tucked away in a quiet cul‑de‑sac—just 5 minutes’ drive to the golf course, unspoilt beaches, shops and restaurants.</p>
+      <p class="max-w-2xl text-lg text-white/90">Just a short walk from a shimmering lake, Dongane Eco Resort invites you to relax, reconnect with nature, and experience the calm rhythm of Mozambique’s great outdoors. Whether you’re lounging by your pool, exploring the lakeside, or simply enjoying the quiet, this resort offers an unforgettable eco-escape.</p>
       <div class="mt-4 flex flex-wrap items-center gap-3">
         <a href="#book" class="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow hover:bg-slate-100">Check Availability</a>
         <a href="#gallery" class="rounded-xl bg-black/30 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/40 backdrop-blur-2xs hover:bg-black/40">See the Space</a>
@@ -103,11 +105,26 @@
       <div>
         <span class="text-sm font-semibold uppercase tracking-wide text-brand-600">Your Stay</span>
         <h2 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Seagull's View • Unit 15</h2>
-        <p class="mt-4 text-slate-600">A calm, comfortable base to explore the South Coast. The room opens to the garden and is steps from the pool deck with sweeping sea views.</p>
+        <!--<p class="mt-4 text-slate-600">A calm, comfortable base to explore the South Coast. The room opens to the garden and is steps from the pool deck with sweeping sea views.</p>-->
         <ul class="mt-6 grid grid-cols-1 gap-3 text-slate-700 sm:grid-cols-2">
           <li class="flex items-start gap-3"><span class="mt-1">✅</span> 2 bed & 1 bath - sleeps 4</li>
           <li class="flex items-start gap-3"><span class="mt-1">✅</span> In‑room coffee & tea station</li>
           <li class="flex items-start gap-3"><span class="mt-1">✅</span> Private Garden & Pool</li>
+          <li class="flex items-start gap-3"><span class="mt-1">✅</span> Free Parking • Private Entrance</li>
+          <li class="flex items-start gap-3"><span class="mt-1">✅</span> Self check‑in available</li>
+        </ul>
+    </div>
+      <div class="overflow-hidden rounded-3xl shadow-2xl ring-1 ring-slate-200">
+        <img src="src/unit16.jpg" alt="Bright double room with ensuite" class="h-full w-full object-cover" />
+      </div>
+      <div>
+        <span class="text-sm font-semibold uppercase tracking-wide text-brand-600">Your Stay</span>
+        <h2 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl"> Dorado Den • Unit 16</h2>
+        <!--<p class="mt-4 text-slate-600">A calm, comfortable base to explore the South Coast. The room opens to the garden and is steps from the pool deck with sweeping sea views.</p>-->
+        <ul class="mt-6 grid grid-cols-1 gap-3 text-slate-700 sm:grid-cols-2">
+          <li class="flex items-start gap-3"><span class="mt-1">✅</span> 2 bed & 1 bath - sleeps 6</li>
+          <li class="flex items-start gap-3"><span class="mt-1">✅</span> In‑room coffee & tea station</li>
+          <li class="flex items-start gap-3"><span class="mt-1">✅</span> Private Garden</li>
           <li class="flex items-start gap-3"><span class="mt-1">✅</span> Free Parking • Private Entrance</li>
           <li class="flex items-start gap-3"><span class="mt-1">✅</span> Self check‑in available</li>
         </ul>
@@ -118,7 +135,7 @@
       <div>
         <span class="text-sm font-semibold uppercase tracking-wide text-brand-600">Your Stay</span>
         <h2 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl"> Bush & Sea • Unit 17</h2>
-        <p class="mt-4 text-slate-600">A calm, comfortable base to explore the South Coast. The room opens to the garden and is steps from the pool deck with sweeping sea views.</p>
+        <!--<p class="mt-4 text-slate-600">A calm, comfortable base to explore the South Coast. The room opens to the garden and is steps from the pool deck with sweeping sea views.</p>-->
         <ul class="mt-6 grid grid-cols-1 gap-3 text-slate-700 sm:grid-cols-2">
           <li class="flex items-start gap-3"><span class="mt-1">✅</span> 2 bed & 1 bath - sleeps 4</li>
           <li class="flex items-start gap-3"><span class="mt-1">✅</span> In‑room coffee & tea station</li>
@@ -132,61 +149,40 @@
   </section>
 
   <!-- Amenities -->
-  <section id="amenities" class="bg-slate-50">
+  <!--<section id="amenities" class="bg-slate-50">
     <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Amenities</h2>
-        <p class="mt-3 text-slate-600">Everything you need for a relaxing coastal getaway.</p>
+        <p class="mt-3 text-slate-600">Everything you need for an adventurous Mozambique trip.</p>
       </div>
       <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Amenity cards -->
         <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-          <h3 class="font-semibold">Pool & Sea‑View Deck</h3>
-          <p class="mt-2 text-sm text-slate-600">Unwind by the pool or watch the waves from the elevated deck.</p>
-        </div>
-        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-          <h3 class="font-semibold">Thatched Lapa & Braai</h3>
-          <p class="mt-2 text-sm text-slate-600">Sheltered entertaining area with barbecue facilities.</p>
-        </div>
-        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-          <h3 class="font-semibold">Coffee & Tea</h3>
-          <p class="mt-2 text-sm text-slate-600">In‑room kettle, coffee and selection of teas.</p>
-        </div>
-        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-          <h3 class="font-semibold">Wi‑Fi</h3>
-          <p class="mt-2 text-sm text-slate-600">Fast, reliable internet throughout the property.</p>
-        </div>
-        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-          <h3 class="font-semibold">Parking</h3>
-          <p class="mt-2 text-sm text-slate-600">Free off‑street parking in a quiet cul‑de‑sac.</p>
-        </div>
-        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
-          <h3 class="font-semibold">Prime Location</h3>
-          <p class="mt-2 text-sm text-slate-600">5 minutes to Southbroom Golf Club, beaches, shops & restaurants.</p>
+          <h3 class="font-semibold">Pool</h3>
+          <p class="mt-2 text-sm text-slate-600">Unwind by the pool dip in for a cool off after a long day (Only Unit 15 & 17).</p>
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <!-- Gallery -->
   <section id="gallery" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
     <div class="flex items-end justify-between gap-6">
       <div>
         <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Gallery</h2>
-        <p class="mt-3 max-w-2xl text-slate-600">A feel for the space and the coastline.</p>
+        <p class="mt-3 max-w-2xl text-slate-600">A feel for the space.</p>
       </div>
       <button id="openLightbox" class="hidden rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-black md:inline-block">Open Slideshow</button>
     </div>
 
     <div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-      <img src="./src/main.jpg.jpg" alt="View from Pool" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
-      <img src="src/grannypool.jpg" alt="Granny's Pool" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
-      <img src="src/golfcourse.jpg" alt="Southbroom Golf Course" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
-      <img src="src/20250721_100834.jpg" alt="Coastline" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
-      <!--<img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1200&auto=format&fit=crop" alt="Sea views" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
-      <img src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1200&auto=format&fit=crop" alt="Coffee station" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
-      <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2d87?q=80&w=1200&auto=format&fit=crop" alt="Lapa & braai" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
-      <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=1200&auto=format&fit=crop" alt="Dining under the lapa" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />-->
+      <img src="./src/lake.jpeg" alt="View at Lake" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
+      <img src="src/deck-view.jpeg" alt="View from Deck Unit 15" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
+      <img src="src/lake2.jpeg" alt="View at Lake 2" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
+      <img src="src/bird-lake.jpg" alt="Bird on Lake" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
+      <img src="src/parking.jpg" alt="Parking Spaces" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
+      <img src="src/parking2.jpg" alt="Parking Spaces 2" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
+      <img src="src/greenland.jpg" alt="Farms" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
+      <img src="src/unit15.jpg" alt="Dining under the lapa" class="aspect-[4/3] w-full cursor-pointer rounded-2xl object-cover" />
     </div>
 
     <!-- Lightbox Modal -->
@@ -204,55 +200,74 @@
         <div class="rounded-[calc(theme(borderRadius.3xl)-4px)] bg-white p-8">
           <h2 class="text-2xl font-bold">Book Your Stay</h2>
           <p class="mt-1 text-sm text-slate-600">Send a request and we’ll confirm right away.</p>
-          <form class="mt-6 grid grid-cols-1 gap-4" onsubmit="openBookingEmail(); return false;">
+<form class="mt-6 grid grid-cols-1 gap-4" onsubmit="openBookingEmail(); return false;">
             
-            <label class="text-sm font-medium">Name
-              <input id="bname" type="text" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 shadow-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-200" placeholder="Your Name"/>
-            </label>
+  <label class="text-sm font-medium">Name
+    <input id="bname" type="text" required 
+      class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 shadow-sm 
+      focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-200" 
+      placeholder="Your Name"/>
+  </label>
 
-            <label class="text-sm font-medium">Email
-              <input id="bemail" type="email" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 shadow-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-200" placeholder="Your Email"/>
-            </label>
+  <label class="text-sm font-medium">Email
+    <input id="bemail" type="email" required 
+      class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 shadow-sm 
+      focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-200" 
+      placeholder="Your Email"/>
+  </label>
 
-            <div class="grid gap-4 sm:grid-cols-2">
-              <label class="text-sm font-medium">Check‑in
-                <input id="bcheckin" type="date" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 shadow-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-200"/>
-              </label>
-              <label class="text-sm font-medium">Check‑out
-                <input id="bcheckout" type="date" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 shadow-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-200"/>
-              </label>
-            </div>
+  <!-- ⭐ NEW FIELD — Same styling, same structure ⭐ -->
+  <label class="text-sm font-medium">Select Unit
+    <select id="bunit" required
+      class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 shadow-sm 
+      focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-200">
+      <option value="">Choose a unit...</option>
+      <option value="Unit 15">Unit 15</option>
+      <option value="Unit 16">Unit 16</option>
+      <option value="Unit 17">Unit 17</option>
+    </select>
+  </label>
 
-            <label class="text-sm font-medium">Message (optional)
-              <textarea id="bmessage" rows="3" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 shadow-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-200" placeholder="Additional Requests"></textarea>
-            </label>
+  <div class="grid gap-4 sm:grid-cols-2">
+    <label class="text-sm font-medium">Check-in
+      <input id="bcheckin" type="date" required 
+        class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 shadow-sm 
+        focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-200"/>
+    </label>
+    <label class="text-sm font-medium">Check-out
+      <input id="bcheckout" type="date" required 
+        class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 shadow-sm 
+        focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-200"/>
+    </label>
+  </div>
 
-            <button type="submit" class="mt-2 inline-flex items-center justify-center rounded-xl bg-brand-700 px-5 py-3 text-sm font-semibold text-white shadow hover:bg-brand-800">Send Booking Request</button>
-            <p id="bookingNote" class="hidden text-sm text-green-700">Thanks! We’ll get back to you shortly.</p>
-          </form>
+  <label class="text-sm font-medium">Message (optional)
+    <textarea id="bmessage" rows="3" 
+      class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 shadow-sm 
+      focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-200" 
+      placeholder="Additional Requests"></textarea>
+  </label>
+
+  <button type="submit" 
+    class="mt-2 inline-flex items-center justify-center rounded-xl bg-brand-700 
+    px-5 py-3 text-sm font-semibold text-white shadow hover:bg-brand-800">
+    Send Booking Request
+  </button>
+
+  <p id="bookingNote" class="hidden text-sm text-green-700">Thanks! We’ll get back to you shortly.</p>
+</form>
 
           <div class="mt-5 text-sm text-slate-600">
             Prefer WhatsApp or phone? <a href="https://wa.me/+27828698105" class="font-semibold text-brand-700 underline underline-offset-2">Chat on WhatsApp</a>
           </div>
         </div>
       </div>
+    </div>
+    </div>
+    </section>
     
 
 
-  <!-- Booking Form 
-  <section id="booking" class="py-16 px-6 max-w-3xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-8">Book Your Stay</h2>
-    <form onsubmit="openBookingEmail(); return false;" class="space-y-4">
-      <input id="bname" type="text" placeholder="Your Name" required class="w-full border p-3 rounded"/>
-      <input id="bemail" type="email" placeholder="Your Email" required class="w-full border p-3 rounded"/>
-      <label class="block">Check-in Date:</label>
-      <input id="bcheckin" type="date" required class="w-full border p-3 rounded"/>
-      <label class="block">Check-out Date:</label>
-      <input id="bcheckout" type="date" required class="w-full border p-3 rounded"/>
-      <textarea id="bmessage" placeholder="Additional Requests" class="w-full border p-3 rounded"></textarea>
-      <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700">Send Booking Request</button>
-    </form>
-  </section>-->
 <!--
         <div class="flex flex-col justify-center">
           <h3 class="text-3xl font-bold tracking-tight">A perfect base to explore the South Coast</h3>
@@ -268,24 +283,24 @@
   </section>
 -->
   <!-- Location -->
-  <!--<section id="location" class="bg-slate-50">
+  <section id="location" class="bg-slate-50">
     <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <div class="grid gap-10 md:grid-cols-2">
         <div>
           <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Location</h2>
-          <p class="mt-3 text-slate-600">Southbroom, KwaZulu‑Natal, South Africa. Quiet cul‑de‑sac with easy access to beaches, restaurants and the golf course.</p>
+          <!--<p class="mt-3 text-slate-600">Southbroom, KwaZulu‑Natal, South Africa. Quiet cul‑de‑sac with easy access to beaches, restaurants and the golf course.</p>-->
           <div class="mt-6 rounded-2xl bg-white p-6 shadow ring-1 ring-slate-200">
             <h3 class="font-semibold">Getting Here</h3>
             <p class="mt-2 text-sm text-slate-600">We’ll share exact directions after booking. Free parking is available on site.</p>
-            <p class="mt-2 text-sm text-slate-600">Nearest airport: Margate (±15 min) • King Shaka (±1h 50min).</p>
+            <p class="mt-2 text-sm text-slate-600">Nearest airport: Inhambane (±1h 30min).</p>
           </div>
         </div>
         <div class="overflow-hidden rounded-3xl shadow-2xl ring-1 ring-slate-200">
-          <iframe title="Map of Southbroom" class="h-[420px] w-full" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Southbroom%2C%20South%20Africa&z=13&output=embed"></iframe>
+          <iframe title="Map of Dongane" class="h-[420px] w-full" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4172.282522654945!2d35.38080987598777!3d-24.272132088090224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1f1f71304a534cb9%3A0x891c6be2b2c35a4c!2sDongane%20Eco%20Resort!5e1!3m2!1sen!2suk!4v1765036562640!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
-  </section>-->
+  </section>
 
   <!-- FAQ -->
   <section id="faq" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
@@ -363,6 +378,7 @@
       const checkin = document.getElementById('bcheckin').value;
       const checkout = document.getElementById('bcheckout').value;
       const message = document.getElementById('bmessage').value;
+      const unit = document.getElementById("bunit").value;
 
       const subject = encodeURIComponent("Dongane Booking Request");
       const body = encodeURIComponent(`Dear Dongane Team,
@@ -373,6 +389,7 @@ Name: ${name}
 Email: ${email}
 Check-in: ${checkin}
 Check-out: ${checkout}
+Unit: ${unit}
 
 Additional Requests:
 ${message}
