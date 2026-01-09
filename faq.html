@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dongane Eco Resort • Private Resort in Mozambique</title>
+    <meta name="description"
+        content="Just a short walk from a shimmering lake, Dongane Eco Resort invites you to relax, reconnect with nature, and experience the calm rhythm of Mozambique’s great outdoors. Whether you’re lounging by your pool, exploring the lakeside, or simply enjoying the quiet, this resort offers an unforgettable eco-escape." />
+    <meta property="og:title" content="Dongane Eco Resort • Private Resort in Mozambique" />
+    <meta property="og:description"
+        content="Just a short walk from a shimmering lake, Dongane Eco Resort invites you to relax, reconnect with nature, and experience the calm rhythm of Mozambique’s great outdoors. Whether you’re lounging by your pool, exploring the lakeside, or simply enjoying the quiet, this resort offers an unforgettable eco-escape." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta property="og:image" content="src/IMG_0377.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa',
+                            500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a'
+                        },
+                    }
+                }
+            },
+            darkMode: 'class'
+        }
+    </script>
+
+    <style>
+        .backdrop-blur-2xs {
+            backdrop-filter: blur(5px);
+        }
+
+        .max-w-2xl text-lg text-whit {
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+    <!-- Header / Nav -->
+    <header class="fixed inset-x-0 top-0 z-50">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div
+                class="mt-4 flex items-center justify-between rounded-2xl bg-white/70 p-3 shadow-lg ring-1 ring-black/5 backdrop-blur">
+                <a href="index.html" class="flex items-center gap-2 font-semibold tracking-tight">
+                    <span class="text-2xl"><img src="favicon.png" width="15%"></span>
+                    <!--<span>Dongane Eco Resort</span>-->
+                </a>
+                <nav class="hidden gap-8 text-sm font-medium md:flex">
+                    <a href="#room" class="hover:text-brand-700">Room</a>
+                    <a href="#amenities" class="hover:text-brand-700">Amenities</a>
+                    <a href="#gallery" class="hover:text-brand-700">Gallery</a>
+                    <a href="#location" class="hover:text-brand-700">Location</a>
+                    <a href="#faq" class="hover:text-brand-700">FAQ</a>
+                    <a href="#contact" class="hover:text-brand-700">Contact</a>
+                </nav>
+                <a href="#book"
+                    class="rounded-xl bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-700">Book
+                    Now</a>
+                <button class="md:hidden" id="menuBtn" aria-label="Open menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 6h18M3 12h18M3 18h18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="mx-auto hidden max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mt-2 rounded-2xl bg-white p-4 shadow ring-1 ring-black/5 md:hidden">
+                <a href="#room" class="block rounded-lg px-3 py-2 hover:bg-slate-50">Room</a>
+                <a href="#amenities" class="block rounded-lg px-3 py-2 hover:bg-slate-50">Amenities</a>
+                <a href="#gallery" class="block rounded-lg px-3 py-2 hover:bg-slate-50">Gallery</a>
+                <a href="#location" class="block rounded-lg px-3 py-2 hover:bg-slate-50">Location</a>
+                <a href="#faq" class="block rounded-lg px-3 py-2 hover:bg-slate-50">FAQ</a>
+                <a href="#contact" class="block rounded-lg px-3 py-2 hover:bg-slate-50">Contact</a>
+            </div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <section id="faq" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl">
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Good to Know</h2>
+            <dl class="mt-8 space-y-6">
+                <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+                    <dt class="font-semibold">Check‑in / Check‑out</dt>
+                    <dd class="mt-1 text-slate-600">Check‑in from 10am • Check‑out by 9am. Flexible when possible.</dd>
+                </div>
+                <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+                    <dt class="font-semibold">House Rules</dt>
+                    <dd class="mt-1 text-slate-600">No smoking indoors. No parties or events. Quiet hours 10pm–7am.</dd>
+                </div>
+                <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+                    <dt class="font-semibold">Cancellation</dt>
+                    <dd class="mt-1 text-slate-600">Full refund up to 30 days before arrival.</dd>
+                </div>
+                <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+                    <dt class="font-semibold">Accessibility</dt>
+                    <dd class="mt-1 text-slate-600">Unit 15 is wheelchair accesible. Please ask if you have specific
+                        needs.</dd>
+                </div>
+                <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+                    <dt class="font-semibold">How Secure is the Lodge?</dt>
+                    <dd class="mt-1 text-slate-600">Completely secure.
+                        There are security guards on duty, night and day. Your security is guaranteed. The Cottages may
+                        be left
+                        open, unsecured, day and night</dd>
+                </div>
+                <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+                    <dt class="font-semibold">Do I need a 4x4?</dt>
+                    <dd class="mt-1 text-slate-600">Yes, you need a 4 X 4. Transfers are available from Inhambane
+                        airport (an hours drive away), or a secured carpark around an hour drive away.
+                        4 X 4 rental is also available, please ask for further details</dd>
+                </div>
+                <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+                    <dt class="font-semibold">How Safe is Mozambique?</dt>
+                    <dd class="mt-1 text-slate-600">Mozambique is completely secure. There were minor protests after the
+                        elections in October 2024 for three months. Most big cities in USA are far more dangerous than
+                        anywhere I Mozambique. Come and enjoy the peace and tranquility.</dd>
+                </div>
+                <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+                    <dt class="font-semibold">What Activities are there?</dt>
+                    <dd class="mt-1 text-slate-600">There is a range of activities including, hiking, 4 x 4 trails,
+                        beach fishing, deep sea charters, whale watching (seasonal), ocean boating experiences, bird
+                        watching, snorkeling, swimming, kayaking in the lake. Jetskiing and waterskiing in the lake are
+                        very popular, however you will need to have your own jetski and boat. Also available are dhow
+                        outings at Inhambane or a yachting experience in Bara.</dd>
+                </div>
+                <div class="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+                    <dt class="font-semibold">Are Cellphone signal and Wi-Fi facilities available?</dt>
+                    <dd class="mt-1 text-slate-600">
+Yes, on request you may rent starlink.</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
